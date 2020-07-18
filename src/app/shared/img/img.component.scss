@@ -14,9 +14,11 @@ img {
   &.loaded {
     opacity: 1;
   }
+  height: 100%;
 }
 
 .csc-lazy-img {
   background-position: center !important;
   background-size: cover !important;
+  height: 100%;
 }

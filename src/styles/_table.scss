@@ -24,6 +24,7 @@ td {
 
 tr {
   border: 1px solid darken($grey, 15%);
+  animation: fadeIn 0.5s ease-in;
 }
 
 .csc-checkbox-col {
@@ -43,4 +44,17 @@ tr {
 .csc-edit-th {
   width: 1px;
   padding: 0px 35px;
+}
+
+@keyframes fadeIn {
+  0% {
+    background-color: #fff;
+    opacity: 0;
+  }
+  99% {
+    background-color: #f5f5f5;
+  }
+  100% {
+    opacity: 1;
+  }
 }

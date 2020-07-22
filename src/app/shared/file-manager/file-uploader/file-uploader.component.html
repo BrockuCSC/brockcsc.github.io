@@ -1,0 +1,15 @@
+<div
+  class="dropzone"
+  dropzone
+  (hovered)="toggleHover($event)"
+  (dropped)="onDrop($event)"
+  [class.hovering]="isHovering"
+>
+  <p>Drag and drop a file to upload</p>
+</div>
+
+<table>
+  <tr *ngFor="let file of files">
+    <td><csc-upload-task [file]="file"></csc-upload-task></td>
+  </tr>
+</table>

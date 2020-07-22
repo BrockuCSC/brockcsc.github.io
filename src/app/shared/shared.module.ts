@@ -12,6 +12,10 @@ import { ButtonComponent } from './button/button.component';
 import { ButtonDirective } from './button/button.directive';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { EventViewComponent } from './event-view/event-view.component';
+import { DropzoneDirective } from './file-manager/dropzone/dropzone.directive';
+import { FileManagerComponent } from './file-manager/file-manager/file-manager.component';
+import { FileUploaderComponent } from './file-manager/file-uploader/file-uploader.component';
+import { UploadTaskComponent } from './file-manager/upload-task/upload-task/upload-task.component';
 import { CheckboxCreatorComponent } from './form/checkbox-creator/checkbox-creator.component';
 import { FirebaseFormCreatorComponent } from './form/firebase-form-creator/firebase-form-creator.component';
 import { FirebaseFormComponent } from './form/firebase-form/firebase-form.component';
@@ -80,6 +84,10 @@ import { UploadComponent } from './upload/upload.component';
     ProminentContainerComponent,
     EventViewComponent,
     GoogleFormComponent,
+    FileManagerComponent,
+    FileUploaderComponent,
+    DropzoneDirective,
+    UploadTaskComponent,
   ],
   providers: [EventApiService, ExecApiService, StorageService, FoodApiService],
 })

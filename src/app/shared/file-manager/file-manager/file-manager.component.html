@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Files Management</h1>
+
+  <table>
+    <thead>
+      <th>Name</th>
+      <th>Preview</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let file of files | async">
+        <td>{{ file.name }}</td>
+        <td><img class="preview-img" [src]="file.url" /></td>
+      </tr>
+    </tbody>
+  </table>
+  <csc-file-uploader></csc-file-uploader>
+</div>

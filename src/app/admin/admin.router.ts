@@ -1,6 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 import { FoodItemsComponent } from 'app/admin/food/foodItems.component';
 import { HomeComponent } from 'app/admin/home/home.component';
+import { FileManagerComponent } from 'app/shared/file-manager/file-manager/file-manager.component';
 import { AdminComponent } from './admin.component';
 import { AdminEventComponent } from './events/admin-event/admin-event.component';
 import { EventsComponent } from './events/events.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
       { path: 'events', component: EventsComponent },
       { path: 'events/:id', component: AdminEventComponent },
       { path: 'food', component: FoodItemsComponent },
+      { path: 'files', component: FileManagerComponent },
       { path: '**', redirectTo: 'home' },
     ],
   },
